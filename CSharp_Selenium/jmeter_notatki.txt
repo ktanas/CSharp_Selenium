@@ -1,0 +1,11 @@
+JMeter - how to execute test from command line:
+cd "location of \bin inside your direcotry with JMeter"
+jmeter -n -t "location of your test file" -l "location of results file" - for Windows
+sh jmeter -n -t "location of your test file" -l "location of results file" - for Linux/MacOS
+
+
+JMeter - create a report at the end of the test
+jmeter -n -t "location of your test file" -l "location of results file" -e -o "location of reports folder"
+
+JMeter - create report from a standalone csv file
+jmeter -g "location of results file" -o "location of reports folder"

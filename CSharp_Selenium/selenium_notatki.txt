@@ -1,0 +1,361 @@
+Wybieranie daty z kalendarza w Selenium - przykład:
+
+while (!driver.findElement(By.className("datepicker-switch")).getText().contains("December")){
+  driver.findElement(By.xpath("//th[@class='next')[1]")).click();
+}
+
+List<WebElement> days = driver.findElements(By.className("day"));
+
+for (int i=0;i<days.size(); i++) {
+  if (days.get(i).getText().equalsIgnoreCase("15")) {
+    days.get(i).click();
+  }
+}
+-----------------------------------------------------------------------------------------
+Obsługa wielu okien przeglądarki w Selenium - przykład:
+
+Set<String> windowIds = driver.getWindowHandles();
+Iterator<String> it = windowIds.iterator();
+
+String window1 = it.next();
+String window2 = it.next();
+
+driver.switchTo(window1);
+
+driver.switchTo(it.get(3));
+-----------------------------------------------------------------------------------------
+Alerty w Selenium - przykład:
+
+Alert myAlert = driver.switchTo().alert();
+String textDisplayOnAlert = alert.getText();
+
+System.out.println("Alert text:"+textDisplayOnAlert);
+
+alert.accept();
+alert.dismiss();
+-----------------------------------------------------------------------------------------
+Select - przykład:
+
+WebElement dropdownField = driver.findElement(By.id("drop1"));
+
+Select select1 = new Select(dropdownField);
+select1.selectByIndex(0);
+
+Select select2 = new Select(dropdownField);
+select2.selectByVisibleText("Hotel Hilton");
+-----------------------------------------------------------------------------------------
+Relative XPath - przykłady:
+
+//button[@id='button1']
+//button[@id='button1'][@name='xxx']
+//*[@name='aaa'] - wszystkie elementy z name=aaa
+------------------------------------------------------------------------------------------
+Składnia CSS - podobna do XPath, ale:
+
+//button[@id='button1'] - XPath
+button[id='button1'] - CSS
+-------------------------------------------------------------------------------------------
+Actions - metody:
+
+moveToElement(), click(), perform(), build(), dragAndDropBy(), contextClick(), doubleClick(),
+dragAndDrop(), keyDown(), keyUp(), sendKeys()
+
+WebElement element1 = driver.findElement(By.id("element1"));
+WebElement option3 = driver.FindElement(By.linkText("Option 3");
+
+Actions a = new Actions(driver);
+a.moveToElement(element1).perform();
+a.click(option3);
+
+WebElement element2 = driver.findElement("By.id("element2"));
+
+Actions b = new Actions(driver);
+b.keyDown(Keys.CONTROL).click(element2).keyUp(Keys.CONTROL).perform();
+---------------------------------------------------------------------------------------------
+Screenshoty w Selenium - przykład:
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.TakesScreenshot;
+
+File file1 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+FileUtils.copyFile(file1, new File("\\users\\jsmith\\selenium\\screenshots\\screenshot1.png");
+-----------------------------------------------------------------------------------------------
+Przykład kodu z listą WebElementów:
+
+System.setProperty("webdriver.chrome.driver","C:\\users\\jsmith\\browser_drivers\\chromedriver.exe");
+
+WebDriver driver = new ChromeDriver();
+        wait = new WebDriverWait(driver, 10);
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+while(!driver.findElement(By.className("datepicker-switch")).getText().contains("December))
+  
+   driver.findElement("By.xpath("//th[@class='next'])[1]")).click();
+
+
+List<WebElement> days = driver.findElements(By.className("day"));
+
+for (int i=0; i<days.size(); i++) {
+
+  if (days.get(i).getText().equalsIgnoreCase("15")) {
+
+     days.get(i).click();
+     break;
+  }
+}
+
+---------------------------------------------------------------------------------------------------
+Explicit wait, implicit wait, fluent wait - przykłady:
+
+WebDriverWait wait = new WebDriverWait(driver,30);
+wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'COMPOSE')]")));
+
+driver = new FirefoxDriver();
+baseUrl = "http://www.google.com";
+driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+//Declare and initialise a fluent wait
+FluentWait wait = new FluentWait(driver);
+//Specify the timeout of the wait
+wait.withTimeout(5000, TimeUnit.MILLISECONDS);
+//Specify polling time
+wait.pollingEvery(250, TimeUnit.MILLISECONDS);
+//Specify what exceptions to ignore
+wait.ignoring(NoSuchElementException.class)
+
+//This is how we specify the condition to wait on.
+//This is what we will explore more in this chapter
+wait.until(ExpectedConditions.alertIsPresent());
+
+---------------------------------------------------------------------------------------------------
+Asercje w Selenium - przykłady:
+
+Assert.assertTrue(driver.findElement(By.id("element1").isDisplayed());
+Assert.assertEquals(driver.findElement(By.id("element1").getText(),"Abrakadabra");
+Assert.assertNotEquals(driver.findElement(By.id("element1").getText(),"qwertyuiop");
+
+Assert.fail() - metoda, które wywołanie zawsze zwraca błąd
+
+if ((nationality!=Polish) || (age<18)) {
+  Assert.fail("Nie jesteś uprawniony/a do głosowania w wyborach");
+}
+-----------------------------------------------------------------------------------------------------
+Znaczniki (anotacje) TestNG:
+
+@Test - oznaczenie pojedynczego testu
+
+
+@BeforeMethod - will be executed before every test method
+@AfterMethod - will be executed after every test method
+
+przykład:
+@BeforeMethod
+@Test (RegisterTest)
+@AfterMethod
+@BeforeMethod
+@Test (LoginTest)
+@AfterMethod
+
+public class TestClass {
+
+   @AfterClass
+   public void finishingActivities() {
+
+   }
+   public void quit() {
+
+   }
+
+   @BeforeClass
+   public void setup()  {
+
+   }
+
+   @Test
+   ...
+
+}
+
+
+@BeforeTest
+@AfterTest
+@BeforeSuite
+@AfterSuite
+@BeforeClass
+@AfterClass
+---------------------------------------------------------------------------------------------
+Komendy Mavena:
+
+mvn test
+mvn clean
+mvn compile
+---------------------------------------------------------------------------------------------------
+Połączenie z bazą danych:
+
+public static void main(String[] args) throws SQLException {
+
+  Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","root");
+
+  Statement stat = conn.createStatement();
+  ResultSet res = stat.executeQuery("SELECT * FROM employees WHERE id=3");
+
+  while (res.next()) {
+    System.out.println(res.getInt("id"));
+    System.out.println(res.getString("name"));
+    System.out.println(res.getString("place"));
+  }
+}
+-------------------------------------------------------------------------------------------------
+Page Object Model:
+
+import org.openqa.selenium,support.FindBy;
+
+
+@FindBy(id="element1")
+private WebElement element1;
+
+@FindBy(className="class1");
+private List<WebElement> class1Elements;
+
+public getNumberOfClass1Elements() {
+  return class1Elements.size();
+}
+---------------------------------------------------------------------------------------------------
+
+Actions a = new Actions(driver);
+a.moveToElement(driver.findElement(By.id("element1"))).click().build().perform();
+----------------------------------------------------------------------------------------------------
+Cucumber - przykładowy scenariusz:
+
+Feature: Login to our application
+
+Scenario outline: User should olny be able to login with valid credentials
+Given I navigate to the application URL
+When I enter Username as "<someusername>" and Password as "<somepassword>" into the fields
+And I click on Login button
+Then User should be able to login based on <expected> login status
+
+Examples:
+|kowalski |123   |failure|
+|kowalski |xyz123|success|
+|kowalskii|xyz123|failure|
+
+@When("^I enter Username as \"([^\"]*)\" and Password as \"([^\"*)\" into the fields$)
+public void I_enter_Username_as_someusername_and_Password_as_somepassword_into_the_fields(String username,String password) {
+
+   driver.findElement(By.name("userId")).sendKeys(username);
+   driver.findElement(By.name("passwd")).sendKeys(password);
+
+}
+-----------------------------------------------------------------------------------------------
+Kolekcje w Javie - składnia:
+
+Listy:
+----------------------------------------------------
+List<Integer> myList = new ArrayList<Integer>(10);
+
+myList.add(3);
+myList.add(1,8989);
+
+myList.remove(0);
+
+LinkedList<String> myList2 = new LinkedList<String>();
+
+myList2.add("Adam Nowak");
+myList2.add("Piotr Kowalski");
+myList2.add("W&()*&W)(&F)(EWFY()FY()WFDYH coihDOIYDE*EWY");
+myList2.addLast("DSWIHDIOSD297J");
+myList2.addFirst("XXssXXX");
+
+myList2.remove("Adam Nowak");
+myList2.remove(2);
+myList2.removeFirst();
+myList2.removeLast();
+
+Zbiory:
+------------------------------------------------------
+Set<String> myHashSet = new HashSet<String>();
+
+myHashSet.add("A");
+myHashSet.add("B");
+boolean r1 = myHashSet.add("C"); // true
+r1 = myHashSet.add("A"); // false
+
+Set<String> myTreeSet = new TreeSet<String>();
+
+myTreeSet.add("A");
+myTreeSet.add("B");
+boolean r1 = myTreeSet.add("C"); // true
+r1 = myTreeSet.add("A"); // false
+
+-------------------------------------------------------
+Mapy:
+
+Map<string, Integer> myMap = new HashMap<>();
+
+myMap.put("a", 100);
+myMap.put("b", 100);
+myMap.put("c", -205);
+myMap.put("d", 30);
+
+System.out.println("myMap.size="+myMap.size());
+System.out.println(myMap);
+
+if (myMap.containsKey("a")) {
+  Integer a = myMap.get("a");
+}
+
+Map<string, Integer> myMap2 = new TreeMap<>();
+
+myMap2.put("a", 100);
+myMap2.put("b", 100);
+myMap2.put("c", -205);
+myMap2.put("d", 30);
+
+System.out.println("myMap2.size="+myMap2.size());
+System.out.println(myMap2);
+
+if (myMap2.containsKey("a")) {
+  Integer a = myMap2.get("a");
+}
+------------------------------------------------------
+
+Strumienie:
+
+List<Integer> numbersList = new ArrayList<>();
+numbersList.add(6);
+numbersList.add(1);
+numbersList.add(12);
+numbersList.add(5);
+
+//List<Integer> squaresList = new ArrayList<>();
+//for (Integer i: numbersList) {
+//  squaresList.add(i*i);
+//}
+
+List<Integer> squaresList = numbersList.stream().map(x -> x*x).collect(Collectors.toList());
+
+//Set<Integer> squareSet = new HashSet<>();
+//for (Integer i: numbersList) {
+//  squaresList.add(i*i);
+//}
+
+Set<Integer> squareSet = numbersList.stream().map(x->x*x).collect(Collectors.toSet());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,132 @@
+Java/Selenium - zagadnienia do nauki:
+
+Pełny kurs jest dostępny pod adresem:
+https://www.youtube.com/playlist?list=PLsjUcU8CQXGGJvTvqg5vmwEZcvok1luXd
+
+
+Pytania-zagadnienia:
+
+1. Różnice między Selenium IDE a Selenium Webdriver: Wideo 1, 13:10
+   Selenium IDE - narzędzie do nagrywania przebiegu testowania (manualnego)
+   podobne do Katalon Recorder'a
+2. Object - predefiniowana klasa w Javie, można tworzyć obiekty, tablice, listy
+   i inne struktury danych z deklaracją pokazaną na przykładzie:
+   Wideo 6, 1:39:23
+3. Overloading/Overriding w Javie: Wideo 9, 52:16
+https://www.digitalocean.com/community/tutorials/overriding-vs-overloading-in-java
+4. Interfejsy w Javie - Wideo 10 - początek
+4a. Czym różni się klasa abstrakcyjna od interfejsu - Wideo 10, 9:00
+5. FileReader - czytanie z pliku: Wideo 10, 2:50:15
+   Wideo 11, 1:09:45
+6. HashSet - Wideo 11, 2:06:25
+7. Iterator - Wideo 11, 2:24:38
+8. HashMap - Wideo 11, 2:41:08
+9. Jak załadować Selenium Webdriver i stworzyć nowy projekt - Wideo 12, początek
+10. Metody drivera i akcje: Wideo 12, 2:36:21
+11. Komendy WebDrivera: Wideo 13: 52:36
+12. Przełączanie drivera pomiędzy poszczególnymi oknami: metody getWindowHandles(), swichTo() - Wideo 14, 0:47
+13. GetWindowHandles, Iterator - przykład użycia - Wideo 14, 53:53
+14. Implicit wait, Explicit wait, Fluent wait - Wideo 14, 1:36:46
+15. Alert, Select: Wideo 14, 2:11:45
+16. Alert - przykład użycia - Wideo 14, 2:21:42
+17. Select - przykład użycia: Wideo 14, 2:32:33
+18. Absolute XPath vs Relative XPath - Wideo 15, 1:23:59
+19. Funkcje XPath'owe: text, contains, starts-with: Wideo 15, 2:11:28
+20. Składnia XPath, a składnia CSS Selectorów: Wideo 16: 2:17:12
+21. Absolute XPath vs Absolute CSS Selector: Wideo 17, 41:21
+22. Składnia wyrażeń regularnych dla CSS selectorów: Wideo 17, 1:56:06
+23. Metody klasy Actions - Wideo 18, 58:43
+24. Nagrywanie screenshotu - przykład: Wideo 19, 25:37
+25. Ładny przykład z listą WebElementów: Wideo 19, 1:44:12
+26. Maven, plik pom.xml - Wideo 20, 28:43
+27. Konfiguracja Mavena: Wideo 20, 1:27:35
+28. Asercje w Selenium - Wideo 21, 53:10
+29. TestNG - BeforeMethod, AfterMethod, BeforeClass, AfterClass - Wideo 22, początek
+30. Plik testng.xml - przykłady - Wideo 22, 52:52, 1:16:56
+31. Przykładowy zestaw testów z użyciem TestNG: Wideo 22, 1:52:21
+32. Listenery w TestNG: Wideo 23, 1:18:08, przykład kodu: 1:39:57
+33. Selenium Grid - pozwala uruchamiać testy równolegle na różnych maszynach, zwiększając szybkość i wydajność testowania
+    opis: Wideo 24, 10:31
+33a. RemoteWebDriver na zdalnej maszynie i przykład kodu: Wideo 24, 1:06:54
+34. Properties oraz plik data.properties - przykład: Wideo 24, 1:46:57
+35. Komendy Maven'a - Wideo 25, początek
+35a. Wykonywanie komend Maven'a z poziomu wiersza poleceń (mvn clean, mvn test) - Wideo 25, 43:18
+36. Jenkins - opis: Wideo 25, 1:11:32
+37. Extent Reports - opis: Wideo 26, początek
+38. ExtentSparkReporter - przykład kodu: Wideo 26, 46:01, 52:47
+39. POI API - opis: Wideo 26, 1:08:11
+39a. POI API - przykład kodu: Wideo 26, 1:41:28, 1:57:05, 2:01:14
+40. LogManager - zapisywanie logów: Wideo 27, 58:51
+40a. Przykładowy wynik z LogManagera po użyciu: Wideo 27, 1:13:26
+41. Operacje na bazie danych z poziomu Selenium - przykład: Wideo 27, 2:01:21
+42. Page Object Model (POM) - przykład kodu: Wideo 28, 1:04:36
+43. PageFactory.initElements(driver, this) : Wideo 28, 1:18:46
+44. Actions.moveToElement(driver.FindElement(By.id("uploadfile"))).click().build().perform() - Wideo 28, 1:59:10
+45. Cucumber jako framework do BDD - opis: Wideo 29, 1:00:29
+46. Przykładowe scenariusze testowe w Cucumberze: Wideo 29, 1:21:28, Wideo 30, 59:12, Wideo 30: 1:15:48
+47. Przykładowy kod Given, Then, When... Wideo 29, 1:57:42
+48. Przykładowy kod z alertem: Wideo 30, 1:35:03
+49. Regex (wyrażenia regularne) - przykładowy kod: Wideo 31, 38:44
+50. CucumberOptions - przykładowy kod: Wideo 31, 1:31:50
+51. Tagi Cucumbera: Wideo 32, 17:24
+52. Przykładowy scenariusz testowy Cucumbera i jego wykonanie na stronie internetowej: Wideo 32, 1:34:51
+53. Kod projektu z properties i frameworkiem - Wideo 33, 35:08
+54. Przykład całego dużego projektu - całe wideo 34
+55. Ćwiczenia z GIT'em - całe wideo 35
+
+C#/Selenium - zagadnienia:
+wideo: https://www.youtube.com/watch?v=utfaE9Nv1FY
+
+1. Przykładowy test: 24:27
+2. Atrybuty NUnit: 39:49
+3. Setup, TearDown: 47:33
+4. Select: 1:12:10
+5. AssemblyInfo, parallelism: 1:40:22
+6. Screenshot: 2:43:09
+
+1. Przykładowy test:
+
+    [TestFixture]
+    public class TestClass
+    {
+       [Test]
+       public void TestMethod()
+       {
+           IWebDriver driver = new ChromeDriver();
+           driver.Url = "https://www.facebook.com/";
+           IWebElement emailTextField = driver.FindElement(By.XPath(".//[@id='email']"));
+           emailTextField.sendKeys("Selenium C#");
+           driver.Quit();
+       }
+    }
+
+2. Atrybuty NUnit:
+
+[TestFixture]
+[OneTimeSetUp]
+[OneTimeTearDown]
+[Test]
+[SetUp]
+[TearDown]
+
+Przykład:
+
+[TestFixture]
+public class TestClass
+{
+   public IWebDriver driver;
+
+   [SetUp]
+   public void Open()
+   {
+      driver = new ChromeDriver();
+      driver.Manage().Window.Maximize();
+      driver.Url = "https://www.facebook.com/";
+   }
+
+   [TearDown]
+   public void Close()
+   {
+      driver.Quit();
+   }
+}

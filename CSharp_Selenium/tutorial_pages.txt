@@ -1,0 +1,166 @@
+Adresy internetowe do szkoleń z różnych zagadnień:
+
+Java tutorial:
+https://www.youtube.com/watch?v=CFD9EFcNZTQ
+
+Java advanced tutorial:
+https://www.youtube.com/watch?v=Ae-r8hsbPUo
+
+Playwright Java tutorial:
+https://www.youtube.com/watch?v=v2H1O0FJhdw&list=PLZMWkkQEwOPliOm7TkV0Ndg45cJPDthDC
+
+Playwright Java tutorial 2:
+https://www.youtube.com/playlist?list=PL699Xf-_ilW7qlOrCGqwsWkgNkHQTqaBb
+
+Spring framework page and documentation:
+https://docs.spring.io/spring-framework
+
+Spring framework tutorial:
+https://www.youtube.com/watch?v=f6DHAgL7FWc
+https://www.youtube.com/watch?v=If1Lw4pLLEo
+
+Java/Selenium tutorial:
+https://www.youtube.com/watch?v=aIfP8rOx66E
+https://www.programsbuzz.com/article/selenium-wait-until-element-visible
+https://www.youtube.com/watch?v=7Pe7qpbSrxA
+
+Selenium Java full course:
+https://www.youtube.com/playlist?list=PLsjUcU8CQXGGJvTvqg5vmwEZcvok1luXd
+
+Selenium/TestNG interview questions:
+https://www.youtube.com/watch?v=_RwrCqh0hBk
+https://www.youtube.com/watch?v=dtP6hI0upKY
+
+Selenium/C# tutorial:
+https://www.youtube.com/watch?v=utfaE9Nv1FY
+https://www.youtube.com/watch?v=ANHMNIUPNSY&list=PL6tu16kXT9Pr50Bu96uf9z4rNxMTVTIxm
+
+NUnit attributte description:
+https://docs.nunit.org/articles/nunit/writing-tests/attributes.html
+
+JUnit vs TestNG - porównanie:
+https://testsigma.com/blog/junit-vs-testng/
+
+Czym różni się explicit wait od implicit wait w Selenium:
+https://testelka.pl/implicit-oraz-explicit-wait/
+
+C# tutorial:
+https://www.youtube.com/watch?v=GhQdlIFylQ8
+https://www.youtube.com/watch?v=Z3EpnGi52tE&list=PLEiEAq2VkUULDJ9tZd3lc0rcH4W5SNSoW
+https://www.plukasiewicz.net/Artykuly/Yield_return
+
+C# advanced tutorial:
+https://www.youtube.com/watch?v=3cfVmcAkR2w&list=PL4LFuHwItvKaOi-bN1E2WUVyZbuRhVokL
+https://www.youtube.com/watch?v=YT8s-90oDC0
+
+All C# features:
+https://www.youtube.com/watch?v=J0FhV3dM80o
+
+C# Regex tutorial:
+https://www.youtube.com/watch?v=8tQhfhguwyQ
+https://www.youtube.com/watch?v=R5BcHIMZMxc
+
+SoapUI tutorial:
+https://www.youtube.com/watch?v=mrxtd0wBGmw
+
+Specflow tutorial:
+https://www.youtube.com/watch?v=HpRzI0C-x-8
+https://www.youtube.com/watch?v=QBQbJwYB4Po
+https://www.youtube.com/watch?v=uUOE21dOQdQ
+https://www.youtube.com/watch?v=oN3M18hbG4I
+https://www.youtube.com/watch?v=sGQGAmXzm2g
+https://www.youtube.com/watch?v=7xPcalwU76c
+
+Specflow - tables:
+https://www.youtube.com/watch?v=NLfCgwQL8TY
+
+Specflow - hooks:
+https://www.youtube.com/watch?v=uwNnoV37DGE
+
+Git tutorial:
+https://www.youtube.com/watch?v=eeuNAIZoWRU
+
+TestNG tutorial:
+https://www.youtube.com/watch?v=qxZdhiW4U40
+
+SQL tutorial:
+https://www.youtube.com/watch?v=HXV3zeQKqGY
+Root password for SQL training: Qqnamuniu123!
+
+SQL advanced tutorials:
+https://www.youtube.com/watch?v=M-55BmjOuXY
+https://www.youtube.com/watch?v=_BvLk3J8nkY
+
+Playwright testing tutorial:
+https://www.youtube.com/watch?v=4_m3HsaNwOE
+
+JavaScript tutorial:
+https://www.youtube.com/watch?v=EfAl9bwzVZk
+
+TypeScript tutorial:
+https://www.youtube.com/watch?v=gieEQFIfgYc
+
+Playwright C#/.NET documentation:
+https://playwright.dev/java/docs/intro
+
+Playwright JavaScript tutorial:
+https://www.youtube.com/watch?v=yOuElUSfAs8&list=PLUDwpEzHYYLsw33jpra65LIvX1nKWpp7-
+
+Docker tutorial:
+https://www.youtube.com/watch?v=3c-iBn73dDE
+
+Kubernetes tutorial:
+https://www.youtube.com/watch?v=X48VuDVv0do
+
+JMeter tutorial:
+https://www.youtube.com/watch?app=desktop&v=SoW2pBak1_Q
+
+Magik tutorial:
+https://mdt.net/training-program/tutorials/
+
+Apache Ant tutorial:
+https://www.youtube.com/playlist?list=PLM3Bf4Rz7ZMvu0NjaQd3BI0V-ZgpCLhUI
+
+Python tutorial:
+https://www.youtube.com/watch?v=XKHEtdqhLK8
+https://www.youtube.com/watch?v=H2EJuAcrZYU
+
+Django tutorial:
+https://www.youtube.com/watch?v=Rp5vd34d-z4
+
+How to run JUnit test in Apache Ant:
+https://www.youtube.com/watch?v=n8AVUNfwX2A
+
+Cypress project setup with Typescript:
+https://www.youtube.com/watch?v=cConATJGtyI
+
+Cypress/Typescript tutorial:
+https://www.youtube.com/watch?v=j1YNpo8gG1c&list=PLPO0LFyCaSo1sEDJb6FR2a1iPl-48FDBL
+
+Cypress E2E Web automation training:
+https://www.youtube.com/watch?v=cnnkb0AuIFI&list=PLUDwpEzHYYLvA7QFkC1C0y0pDPqYS56iU
+
+Playwright/Typescript tutorial:
+https://www.youtube.com/watch?v=_TAg4hpdlDU
+https://www.youtube.com/watch?v=wawbt1cATsk
+
+Cucumber tutorial:
+https://www.youtube.com/watch?v=s2Yhj-uyJ2M
+
+C# / Unity tutorial:
+https://www.youtube.com/watch?v=VEnZzwW_OJM
+
+Unity 2D RPG tutorial:
+https://www.youtube.com/watch?v=Ts9JzLo6zII&list=PLy1Xj-4F5G_cytIH8by-bZ9TVj5qKMlZn
+
+Unity 3D RPG tutorial:
+https://www.youtube.com/watch?v=jQmtBvxclI4&list=PLE70FML1U9svBs9GBdhvesMkd0GuprFho
+
+ASP.NET tutorial:
+https://www.youtube.com/watch?v=nelyq4LD-KY
+
+Git/Visual Studio tutorial:
+https://www.youtube.com/watch?v=8zSVvTQXSIc
+
+Visual Studio debugging tutorial:
+https://www.youtube.com/watch?v=__3wlUxMXlA

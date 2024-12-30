@@ -1,0 +1,3 @@
+A mock is a nullified class instance that does not play a role in a test
+A stub is a mock with additional instructions for how to behave when certain methods are called
+A spy is just like a regular class instance with the ability to also stub method calls
